@@ -1,0 +1,13 @@
+.blogs {
+    font-family: "Work Sans" sans-serif;
+    .blogs__container {
+        .blogs__inner {
+            .blogs__rows {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+        }
+    }
+}

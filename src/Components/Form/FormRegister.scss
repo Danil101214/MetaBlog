@@ -1,0 +1,37 @@
+.form__box {
+    border-bottom: 2px solid rgb(0, 8, 66);
+    margin-bottom: 42px;
+    font-size: 13px;
+    .form__box-label {
+        color: rgb(153, 153, 153);
+        font-size: 13px;
+    }
+    .bottom {
+        display: flex;
+        align-items: center;
+        margin: 11px 0px 7px 0px;
+        .bottom__image svg {
+            fill: white;
+        }
+        
+        .bottom__input {
+            border: none;
+            max-width: 402px;
+            width: 100%;
+            margin-left: 10px;
+            padding: 5px;
+            background-color: inherit;
+        }
+        .active::placeholder {
+            color: #fff;
+        }
+        input::placeholder {
+            font-size: 16px;
+            font-weight: 400;
+            color: rgb(0, 8, 66);
+        }
+        input {
+            outline:none;
+        }
+    }
+}

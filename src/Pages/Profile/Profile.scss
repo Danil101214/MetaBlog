@@ -1,0 +1,137 @@
+.profile {
+    .profile__container {
+        font-size: 15px;
+        .profile__inner {
+            .profile__GeneralBox {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-bottom: 30px;
+                .information {
+                    display: flex;
+                    align-items: center;
+                    gap: 22.47px;
+                    .information__logo {
+                        max-width: 93.61px;
+                        height: 93.61px;
+                        width: 100%;
+                        border-radius: 50%;
+                    }
+                    .information__TextBox {
+                    }
+                    .information__TextBox-name {
+                        font-size: 19px;
+                        font-weight: 500;
+                        color: inherit;
+                    }
+                    .information__TextBox-email {
+                        color: inherit;
+                        opacity: 0.5;           
+                    }
+                }
+                .profile__GeneralBox-edit {
+                    padding: 9px 30px;
+                    border-radius: 7.5px;
+                    background-color: rgb(65, 130, 249);
+                    border: 1px solid rgb(65, 130, 249);
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+            .profile__editInformation {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .profile__editInformation-form {
+                    flex: 0 1 50%;
+                    .form__userBox {
+                        display: flex;
+                        flex-direction: column;
+                        .form__userBox-label {
+                            opacity: 0.8;
+                            margin-bottom: 12px;
+                            color: inherit;
+                        }
+                        .form__userBox-input {
+                            display: block;
+                            height: 48.68px;
+                            font-size: 20px;
+                            border-radius: 7.49px;
+                            background-color: rgb(249, 249, 249);
+                            border: 1px solid rgb(249, 249, 249);
+                            outline: none;
+                        }
+                    }
+                    .form__userBox:not(:last-child) {
+                        margin-bottom: 22.5px;
+                    }
+                }
+                .description {
+                    display: block;
+                    flex: 0 1 555px;
+                    .description__text {
+                        opacity: 0.8;
+                        margin-bottom: 12px;
+                        display: block;
+                    }
+                    .description__box {
+                        background-color: rgb(200, 200, 200);
+                        border-radius: 10px;
+                        .description__box-input {
+                            min-width: 280px;
+                            max-width: 555px;
+                            width: 100%;
+                            outline: none;
+                            resize: none;
+                            height: 200px;
+                            box-sizing: border-box;
+                            font-size: 20px;
+                            border-radius: 7.49px;
+                            background-color: rgb(255, 255, 255);
+                            border: 1px solid rgb(255, 255, 255);
+                            outline: none;
+                        }
+                }
+            }
+            }
+        }
+    }
+}
+
+@media(max-width: 1140px) {
+    .profile {
+        .profile__container {
+            .profile__inner {
+                .profile__GeneralBox {
+                    .information {
+                        gap: 10px;
+                        .information__logo {
+                            height: 50px;
+                            width: 50px;
+                        }
+                        .information__TextBox-name {
+                            font-size: 16px;
+                        }
+                        .information__TextBox-email {
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .profile__editInformation {
+                    justify-content: center;
+                    .profile__editInformation-form {
+                        flex: 1 1 50%;
+                    }
+                    .description {
+                        flex-grow: 1;
+                        .description__box {
+                            .description__box-input {
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

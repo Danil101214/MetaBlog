@@ -1,0 +1,38 @@
+.description__box {
+    background-color: rgb(200, 200, 200);
+    border-radius: 10px;
+    .description__box-input {
+        max-width: 100%;
+        outline: none;
+        resize: none;
+        height: 200px;
+        overflow: auto;
+        box-sizing: border-box;
+        font-size: 24px;
+        font-weight: 400;
+        border-radius: 7.49px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(255, 255, 255);
+        outline: none;
+        padding: 14px 0px 0px 18px;
+        color: #000;
+    }
+    [data-placeholder]:empty:before{
+        content: attr(data-placeholder);
+        color: grey;
+        display: block;
+        pointer-events: none;
+    }
+    .buttons {
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+        .buttons__button {
+            padding: 5px 10px;
+            background-color: rgb(64, 64, 64);
+            color: white;
+            cursor: pointer;
+            appearance: button;
+        }
+    }
+}

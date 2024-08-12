@@ -1,0 +1,80 @@
+.blogInformation {
+    .blogInformation__container {
+        max-width: 800px;
+        margin: 0px auto;
+        .blogInformation__inner {
+            .blogInformation__category {
+                background: rgb(75, 107, 251);
+                font-size: 14px;
+                display: inline-block;
+                color: #fff;
+                padding: 6px 12px;
+                border-radius: 6px;
+            }
+            .blogInformation__title {
+                font-size: 36px;
+                font-weight: 600;
+                line-height: normal;
+                margin-top: 16px;
+            }
+            .user {
+                font-size: 14px;
+                font-weight: 500;
+                display: flex;
+                gap: 24px;
+                padding-top: 20px;
+                .user__textBox {
+                    display: flex;
+                    gap: 8px;
+                    .user__textBox-image {
+                        width: 28px;
+                        height: 28px;
+                        border-radius: 50%;
+                    }
+                    .user__textBox-name {
+                        color: rgb(105, 106, 117);
+                        font-weight: 400;
+                    }
+                }
+                .user__date {
+                    color: rgb(105, 106, 117);
+                }
+            }
+            .blogInformation__image {
+                display: flex;
+                width: 100%;
+                max-height: 462px;
+                margin-top: 32px;
+            }
+            .blogInformation__description {
+                font-size: 20px;
+                font-weight: 400;
+                margin-top: 32px;
+            }
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .blogInformation {
+        .blogInformation__container { 
+            .blogInformation__inner {
+                .blogInformation__title {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 426px) {
+    .blogInformation {
+        .blogInformation__container { 
+            .blogInformation__inner {
+                .blogInformation__title {
+                    font-size: 21px;
+                }
+            }
+        }
+    }
+}

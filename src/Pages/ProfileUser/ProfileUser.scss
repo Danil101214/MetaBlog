@@ -1,0 +1,56 @@
+.profileUser {
+    .profileUser__container {
+        .profileUser__inner {
+            .profileUser__general {
+                background: rgb(231, 231, 233);
+                padding: 48px;
+                border-radius: 12px;
+                .profileUser__general-block {
+                    max-width: 668px;
+                    margin: 0px auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .user {
+                        display: flex;
+                        gap: 16px;
+                        align-items: center;
+                        .user__image {
+                            width: 64px;
+                            height: 64px;
+                            border-radius: 80px;
+                        }
+                        .user__textBox {
+                            .user__textBox-name {
+                                font-size: 20px;
+                                font-weight: 500;
+                                line-height: 28px;
+                            }
+                            .user__textBox-email {
+                            }
+                        }
+                    }
+                    .profileUser__general-description {
+                        margin-top: 32px;
+                        text-align: center;
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                }
+            }
+            .profileUser__blog {
+                margin-top: 48px;
+                .profileUser__blog-title {
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+                .blogs {
+                    display: flex;
+                    gap: 20px;
+                    flex-wrap: wrap;
+                    margin-top: 32px;
+                }
+            }
+        }
+    }
+}
