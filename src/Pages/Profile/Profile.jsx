@@ -32,7 +32,7 @@ const Profile = () => {
                 user: response.data, 
                 status: true
               }))
-            navigate(BLOGS)
+            navigate('/' + BLOGS)
             toast("Data updated");
         } catch (error) {
             toast(error.response.data)

@@ -57,7 +57,7 @@ const CreatePost = () => {
       try {
         await axios.post("https://server-1uom.onrender.com/posts", information)
         toast("Post created");
-        navigate(BLOGS)
+        navigate('/' + BLOGS)
       } catch (error) {
         toast(error.response.data)
       }

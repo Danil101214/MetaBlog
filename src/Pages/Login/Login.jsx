@@ -47,7 +47,7 @@ const Login = () => {
           status: true
         }))
         toast("Welcome in system");
-        navigate(BLOGS)
+        navigate('/' + BLOGS)
       } catch (error) {
         toast(error.response.data)
       }

@@ -61,7 +61,7 @@ const Registration = () => {
           status: true
         }))
         toast("Registration successful")
-        navigate(BLOGS)
+        navigate('/' + BLOGS)
       } catch (error) {
         toast(error.response.data)
       }
