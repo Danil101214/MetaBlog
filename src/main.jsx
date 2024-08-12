@@ -7,7 +7,7 @@ import { ABOUT_US } from './Components/Constants.js'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename={ABOUT_US}>
+    <BrowserRouter basename={'/'}>
     <App />
     </BrowserRouter>
   </React.StrictMode>,
